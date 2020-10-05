@@ -7,6 +7,10 @@ Generate text images for training deep learning OCR model (e.g. [CRNN](https://g
 - [ ] Generate vertical text
 - [ ] Corpus sampler: helpful to perform character balance
 
+## Updates of the fork
+
+  - Updated the requirements to more recent versions of the packages (at the time of writing)
+
 ## Quick Start
 
 To use text_renderer, you should prepare:
@@ -21,7 +25,7 @@ Run following command to generate image using example data:
 ```bash
 git clone https://github.com/oh-my-ocr/text_renderer
 cd text_renderer
-python3 setup.py develop
+python3 setup.py develop --user
 pip3 install -r docker/requirements.txt
 python3 main.py \
     --config example_data/example.py \
