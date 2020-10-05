@@ -10,6 +10,7 @@ Generate text images for training deep learning OCR model (e.g. [CRNN](https://g
 ## Updates of the fork
 
   - Updated the requirements to more recent versions of the packages (at the time of writing)
+  - Better instruction on creating the documentation
 
 ## Quick Start
 
@@ -71,9 +72,17 @@ text_renderer
 
 ## Build docs
 
+Make sure you have the sphinx-build executable (or script) in your Path!
+You can locate where your python scripts are with:
+pip show package_name
+So for me, I had to do: pip show sphinx
+to figure out where it was installed and add it to my Path :D
+
 ```bash
 cd docs
 make html
+or
+.\make.bat html 
 ```
 
 Open `_build/html/index.html`
